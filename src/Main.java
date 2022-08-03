@@ -41,14 +41,36 @@ public class Main {
     }
         System.out.println("Потребуется "+deliveryPeriod+" дня доставки.");
     // задача 5
-     byte   monthNumber = 12;
-     switch (monthNumber){
-         case 1:
-         case 2:
-         case 12:
-
+     byte   monthNumber = 14;
+     if (monthNumber>=13||monthNumber<=0){
+            System.out.println("Неправильный номер месяца");
+        }
+        else{
+            switch (monthNumber) {
+                case 1:
+                case 2:
+                case 12:
+                    System.out.println("Время года - зима.");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Время года - весна.");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    System.out.println("Время года - лето.");
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    System.out.println("Время года - зима.");
+                    break;
+            }
+        }
      }
 
     }
-}
+
 
